@@ -1,0 +1,21 @@
+head section
+
+Integer getSize()
+Integer getValor(Integer i)
+Integer getSumaEntre3()
+
+Integer n = getSize()
+Integer k = getSumaEntre3()
+
+goal section
+
+min sum(x[i,0], i in 0 .. n)
+
+constraints section
+
+sum(x[i,j], j in 0 .. 3) = 1, i in 0 .. n
+sum(getValor(i) x[i,j], i in 0 .. n) = k, j in 0 .. 3
+
+bin
+
+x[i,j], i in 0 .. n, j in 0 .. 3

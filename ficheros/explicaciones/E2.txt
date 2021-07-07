@@ -1,0 +1,11 @@
+Variables binarias x[i,j] = 1 si el abogado i toma el caso j
+
+Cada caso debe estar asociado SOLO a un abogado
+sum(x[i,j], i in 0 .. n) = 1, j in 0 .. m
+
+Minimizar el maximo de algo, usamos T[0]. Para cada abogado vemos cuanto tarda los 
+casos que se le han asociado y decimos que son menor o igual que T
+sum(getHours(i,j) x[i,j], j in 0 .. m) - T[0] <= 0 , i in 0 .. n
+
+
+min T[0]

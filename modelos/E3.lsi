@@ -1,0 +1,21 @@
+head section
+
+Double getPrecio(Integer i)
+Integer getNumProductos()
+Integer getNumFuncionalidades()
+Integer contieneFuncionalidad(Integer i, Integer j)
+
+Integer n = getNumProductos()
+Integer m = getNumFuncionalidades()
+
+goal section
+
+min sum(getPrecio(i) x[i], i in 0 .. n)
+
+constraints section
+
+sum(contieneFuncionalidad(i, j) x[i], i in 0 .. n) >= 1, j in 0 .. m
+
+bin
+
+x[i], i in 0 .. n

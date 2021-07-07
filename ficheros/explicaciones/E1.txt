@@ -1,0 +1,9 @@
+Variable binaria x[i,j] = 1 si el alumno i se encuentra en el grupo j
+
+Solamente tomamos alumnos que NO tengan afinidad 0 con el grupo j y En cada grupo debe haber N/M alumnos
+sum(x[i,j], i in 0 .. n | getAfinidad(i,j) > 0 ) = n/m, j in 0 .. m
+
+Para cada alumno debemos cumplir que se encuentra en SOLO 1 grupo
+sum(x[i,j], j in 0 .. m) = 1, i in 0 .. n
+
+maximizamos la afinidad!

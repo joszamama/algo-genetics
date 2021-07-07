@@ -1,0 +1,8 @@
+Variable binaria x[i] = 1 si el producto i se selecciona para el lote
+
+Alguno de los productos que tienen la funcionalidad que queremos debe estar a 1. Puede haber 
+varios productos incluidos que repitan funcionalidad
+sum(contieneFuncionalidad(i, j) x[i], i in 0 .. n) >= 1, j in 0 .. m
+
+Queremos minimizar el precio total del lote
+min sum(getPrecio(i) x[i], i in 0 .. n)

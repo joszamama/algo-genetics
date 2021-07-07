@@ -1,0 +1,11 @@
+Variable binaria x[i,j] = 1 si el elemento i se encuentra en el subconjunto j
+
+Cada elemento debe estar en un único subconjunto
+sum(x[i,j], j in 0 .. m) = 1, i in 0 .. n
+ 
+Para cada subconunto se tiene que cumplir que la suma de los elementos que estan en ese 
+subconjunto debe de ser igual que la suma entre 3 para hacerlo equivalente LA K ES LA SUMA ENTRE 3!
+sum(getValor(i) x[i,j], i in 0 .. n) = k, j in 0 .. m
+
+Minimizamos los elementos que hay en los subconjuntos
+min sum(x[i,0], i in 0 .. n)
